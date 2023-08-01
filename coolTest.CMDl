@@ -1,5 +1,4 @@
-﻿// Set the text colour to red
-// Warning: this is all case-sensitive as of now, meaning any colour assignments MUST have a capital letter at the beginning
+﻿// Warning: this is all case-sensitive as of now, meaning any colour assignments MUST have a capital letter at the beginning
 // Also, colours are dynamic, meaning its action will change depending on which value you are assigning
 // And for assigning values to the title, it doesn't really matter if you use quotes, it still works
 // However, you shouldn't use appostrophes to try indicate a string, they do not get removed

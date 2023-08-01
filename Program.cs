@@ -32,7 +32,7 @@ namespace CMD_lang
                 }
             } catch(Exception ex)
             {
-                Console.WriteLine(ex.Message + "\n \n" + ex.StackTrace + "\n \n" + ex.Source);
+                Console.WriteLine(ex.errorString());
                 Console.ReadKey();
             }
         }
@@ -132,6 +132,14 @@ namespace CMD_lang
             }
             Console.WriteLine("The code has finished, press any key to exit");
             Console.ReadKey(true);
+        }
+    }
+
+    public static class ExtensionMethods
+    {
+        public static string errorString(this Exception ex)
+        {
+            return ex.Message + "\n \n" + ex.StackTrace + "\n \n" + ex.Source;
         }
     }
 }

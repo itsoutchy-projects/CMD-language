@@ -1,0 +1,43 @@
+﻿// Set the text colour to red
+// Warning: this is all case-sensitive as of now, meaning any colour assignments MUST have a capital letter at the beginning
+// Also, colours are dynamic, meaning its action will change depending on which value you are assigning
+// And for assigning values to the title, it doesn't really matter if you use quotes, it still works
+// However, you shouldn't use appostrophes to try indicate a string, they do not get removed
+Console.title = "wow"
+Console.textColour = Red
+Console.write("nice")
+Console.textColour = Green
+Console.write("YESSSSSSSSSSS")
+Console.textColour = White
+Console.backgroundColour = Green
+Console.write("OOOH WOW!")
+Console.resetColours()
+Console.write("press key please!")
+Console.waitForKey(true)
+Console.write("You pressed a key!")
+Console.textColour = Red
+Console.write("Oh no! a wild fighter has appeared! Press a key to attack!")
+Console.resetColours()
+Console.waitForKey(false)
+Console.write("")
+Console.textColour = Red
+Console.write("Fighter: Agh! What was that for? Oh boy! You're gonna pay!")
+Console.waitForKey(true)
+Console.write("Fighter uses laser! It was not very effective.")
+Console.resetColours()
+Console.write("Press a key to attack!")
+Console.waitForKey(false)
+Console.write("")
+Console.write("Player has attacked! It was very effective!")
+Console.waitForKey(true)
+Console.textColour = Green
+Console.write("The fighter has been eliminated!")
+
+// Documentation starts here
+// Console - class for all things related to the console, such as:
+// textColour - used to assign a new colour for the text, for which colours are supported, read the C# documentation on "ConsoleColor"
+// backgroundColour - used to assign a new colour for the background of the text, for which colours are supported, read the C# documentation on "ConsoleColor"
+
+// Questions and answers
+// Why are you referencing C# documentation? Because the app used to run these scripts is using C#
+// Why is this case-sensitive? Because C# is case-sensitive

@@ -110,7 +110,25 @@ namespace CMD_lang
                                 {
                                     splitLine[1] = splitLine[1].Replace(")", "");
                                     splitLine[1] = splitLine[1].Replace("\"", "");
-                                    Console.ReadKey(bool.Parse(splitLine[1]));
+                                    if (splitLine[1] == "true" || splitLine[1] == "false")
+                                    {
+                                        Console.ReadKey(bool.Parse(splitLine[1]));
+                                    }//else
+                                    //{
+                                    //    // Warning to self: this is pending testing. I need to make sure this doesn't lag, maybe it will get delayed for now, sorry! Uncomment to test it yourself.
+                                    //    ConsoleKeyInfo keyInfo = Console.ReadKey(true);
+                                    //    if (keyInfo.KeyChar.ToString() != splitLine[1])
+                                    //    {
+                                    //        while (keyInfo.KeyChar.ToString() != splitLine[1])
+                                    //        {
+                                    //            keyInfo = Console.ReadKey(true);
+                                    //            if (keyInfo.KeyChar.ToString() == splitLine[1])
+                                    //            {
+                                    //                break;
+                                    //            }
+                                    //        }
+                                    //    }
+                                    //}
                                 } else
                                 {
                                     Console.ReadKey();

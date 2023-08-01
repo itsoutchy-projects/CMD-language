@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Inno setup output
+/inno setup output
+
+# krita saves
+*.kra

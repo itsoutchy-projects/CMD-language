@@ -1,0 +1,38 @@
+﻿// This example only shows some of the possible colours, for more, go to: https://learn.microsoft.com/en-us/dotnet/api/system.consolecolor?view=net-7.0#fields
+
+Console.textColour = Red
+Console.write("Red")
+Console.textColour = Yellow
+Console.write("Yellow")
+Console.textColour = Green
+Console.write("Green")
+Console.textColour = Blue
+Console.write("Blue")
+Console.textColour = DarkBlue
+Console.write("DarkBlue")
+Console.textColour = Cyan
+Console.write("Cyan")
+Console.textColour = Gray
+Console.write("Gray")
+Console.textColour = White
+Console.write("White")
+
+Console.write("")
+
+Console.backgroundColour = Red
+Console.write("Red")
+Console.backgroundColour = Yellow
+Console.write("Yellow")
+Console.backgroundColour = Green
+Console.write("Green")
+Console.backgroundColour = Blue
+Console.write("Blue")
+Console.backgroundColour = DarkBlue
+Console.write("DarkBlue")
+Console.backgroundColour = Cyan
+Console.write("Cyan")
+Console.backgroundColour = Gray
+Console.write("Gray")
+Console.textColour = Black
+Console.backgroundColour = White
+Console.write("White")

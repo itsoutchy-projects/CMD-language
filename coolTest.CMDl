@@ -15,6 +15,7 @@ Console.write("press key please!")
 Console.waitForKey(true)
 Console.write("You pressed a key!")
 Console.textColour = Red
+Console.title = "The fight has begun"
 Console.write("Oh no! a wild fighter has appeared! Press a key to attack!")
 Console.resetColours()
 Console.waitForKey(false)
@@ -36,6 +37,10 @@ Console.write("The fighter has been eliminated!")
 // Console - class for all things related to the console, such as:
 // textColour - used to assign a new colour for the text, for which colours are supported, read the C# documentation on "ConsoleColor"
 // backgroundColour - used to assign a new colour for the background of the text, for which colours are supported, read the C# documentation on "ConsoleColor"
+// resetColours - resets the colours
+// write - writes text
+// waitForKey - makes the script wait until a key is pressed, you can optionally put a boolean in there to specify whether to show the key that was pressed, true means it won't show, false means it will
+// title - the title of the console
 
 // Questions and answers
 // Why are you referencing C# documentation? Because the app used to run these scripts is using C#

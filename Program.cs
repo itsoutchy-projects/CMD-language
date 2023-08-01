@@ -44,11 +44,12 @@ namespace CMD_lang
         public static void eval(string lines)
         {
             string[] split = lines.Split("\n");
-
+            int lineIndex = 1;
             foreach(string s in split)
             {
                 try
                 {
+                    lineIndex++;
                     // Make sure that the line is not a comment
                     if (!s.StartsWith("//"))
                     {
@@ -110,10 +111,10 @@ namespace CMD_lang
                                 {
                                     splitLine[1] = splitLine[1].Replace(")", "");
                                     splitLine[1] = splitLine[1].Replace("\"", "");
-                                    if (splitLine[1] == "true" || splitLine[1] == "false")
-                                    {
+                                    //if (splitLine[1] == "true" || splitLine[1] == "false")
+                                    //{
                                         Console.ReadKey(bool.Parse(splitLine[1]));
-                                    }//else
+                                    //}//else
                                     //{
                                     //    // Warning to self: this is pending testing. I need to make sure this doesn't lag, maybe it will get delayed for now, sorry! Uncomment to test it yourself.
                                     //    ConsoleKeyInfo keyInfo = Console.ReadKey(true);
@@ -143,11 +144,12 @@ namespace CMD_lang
                     }
                 } catch(Exception ex)
                 {
-                    Console.WriteLine("Error on script! " + ex.Message);
+                    Console.WriteLine("Error on script!(line: " + (lineIndex - 1) + ")" + ex.Message);
                     Console.WriteLine("Stack trace: \n" + ex.StackTrace);
-                    return;
+                    break;
                 }
             }
+            Console.ResetColor();
             Console.WriteLine("The code has finished, press any key to exit");
             Console.ReadKey(true);
         }

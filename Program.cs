@@ -85,6 +85,11 @@ namespace CMD_lang
                                     Console.Title = splitLine[1];
                                 }
                             }
+                            if (function.StartsWith("beep"))
+                            {
+                                // Beeps, dunno why you'd want to use
+                                Console.Beep();
+                            }
                             if (function.StartsWith("write"))
                             {
                                 // Writes to the window

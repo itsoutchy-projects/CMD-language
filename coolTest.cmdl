@@ -41,6 +41,7 @@ Console.write("The fighter has been eliminated!")
 // write - writes text
 // waitForKey - makes the script wait until a key is pressed, you can optionally put a boolean in there to specify whether to show the key that was pressed, true means it won't show, false means it will
 // title - the title of the console
+// beep - makes the console beep
 
 // Questions and answers
 // Why are you referencing C# documentation? Because the app used to run these scripts is using C#
